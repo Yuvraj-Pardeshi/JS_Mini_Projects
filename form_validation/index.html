@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/918d746c1b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form-container">
+            <h2 class="form-heading">Registration Form</h2>
+            <div class="form-holder">
+                <div class="form-data">
+                    <span class="icon"><i class="fa-regular fa-user"></i></span>
+                    <input 
+                        type="text"
+                        class="form-control"
+                        placeholder="UserName"
+                        required
+                        autocomplete="off"
+                        id="username"
+                    >
+                </div>
+                <div class="error" id="usernameError"></div>
+            </div>
+            <div class="form-holder">
+                <div class="form-data">
+                    <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                    <input 
+                        type="text"
+                        class="form-control"
+                        placeholder="Phone Number"
+                        required
+                        autocomplete="off"
+                        id="phonenumber"
+                    >
+                </div>
+                <div class="error" id="phonenumberError"></div>
+            </div>
+            <div class="form-holder">
+                <div class="form-data">
+                    <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                    <input 
+                        type="text"
+                        class="form-control"
+                        placeholder="Email"
+                        required
+                        autocomplete="off"
+                        id="email"
+                    >
+                </div>
+                <div class="error" id="emailError"></div>
+            </div>
+            <div class="form-holder">
+                <div class="form-data">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input 
+                        type="password"
+                        class="form-control"
+                        placeholder="Password"
+                        required
+                        autocomplete="off"
+                        id="password"
+                    >
+                </div>
+                <div class="error" id="passwordError"></div>
+            </div>
+            <div class="form-holder">
+                <div class="form-data">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input 
+                        type="password"
+                        class="form-control"
+                        placeholder="Confirm Password"
+                        required
+                        autocomplete="off"
+                        id="confirmpassword"
+                    >
+                </div>
+                <div class="error" id="confirmpasswordError"></div>
+            </div>
+            <div class="form-btn">
+                <button class='btn formSubmit'>
+                    Register
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
