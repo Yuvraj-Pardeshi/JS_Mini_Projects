@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="game-title">TIC-TAC-TOE</h1>
+        <div class="grid-input">
+            <label for="gridsize">
+                Enter Grid Size - 
+                <input type="number" id="grid-size" min="3" max="6">
+            </label>
+            <button onclick="startGame()" class="start-btn">Start Game</button>
+        </div>
+        <div class="scoreboard">
+            <p>X Wins: <span id="x-wins">0</span></p>
+            <p>O Wins: <span id="o-wins">0</span></p>
+            <p>Draws: <span id="draws">0</span></p>
+        </div>
+        <div class="tic-tac-toe">
+        </div>
+    </div>
+</body>
+</html>
